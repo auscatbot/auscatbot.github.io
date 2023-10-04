@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 <head>
 <style>
@@ -26,29 +27,53 @@ body {
          &.i3 {
             background-image: url('https://i.imgur.com/VYdvmBm.png');
          }
+         &.i4 {
+            background-image: url('https://i.imgur.com/oWj43vS.png');
+         }
+         &.i5 {
+            background-image: url('https://i.imgur.com/7xci55C.png');
+         }
+         &.i6 {
+            background-image: url('https://i.imgur.com/pT6mUbZ.png');
+         }
+         &.i7 {
+            background-image: url('https://i.imgur.com/wiO5NmE.png');
+         }
+         &.i8 {
+            background-image: url('https://i.imgur.com/K7VVWaW.png');
+         }
+         &.i9 {
+            background-image: url('https://i.imgur.com/87ZmIW2.png');
+         }
+         &.i10 {
+            background-image: url('https://i.imgur.com/VhmqYwt.png');
+         }
+         &.i11 {
+            background-image: url('https://i.imgur.com/sXIWyqi.png');
+         }
          &.a1 {
-            animation: waterfall1 6s ease-in infinite;
+            animation: waterfall1 5s ease-in infinite;
          }
          &.a2 {
-            animation: waterfall2 5s ease-in infinite;
+            animation: waterfall2 4s ease-in infinite;
          }
          &.a3 {
-            animation: waterfall3 7s ease-in infinite;
+            animation: waterfall3 6s ease-in infinite;
          }
          &.a4 {
-            animation: waterfall4 6s ease-in infinite;
-         }
-         &.a5 {
-            animation: waterfall5 5s ease-in infinite;
-         }
-         &.a6 {
-            animation: waterfall6 7s ease-in infinite;
+            animation: waterfall4 5s ease-in infinite;
          }
          &.a5 {
             animation: waterfall5 4s ease-in infinite;
          }
          &.a6 {
             animation: waterfall6 6s ease-in infinite;
+         }
+         &.a5 {
+            animation: waterfall5 4s ease-in infinite;
+         }
+         &.a6 {
+            animation: waterfall6 5s ease-in infinite;
          }
       }
    }
@@ -133,9 +158,9 @@ body {
 <script>
 function waterfall() {
    $.each($(".container"), function(){
-      var waterfallcount = ($(this).width()/40);
+      var waterfallcount = ($(this).width()/30);
       for(var i = 0; i <= waterfallcount; i++) {
-         $(this).append('<span class="particle i' + $.rnd(1,3) + ' a' + $.rnd(1,8) + '" style="top:-10%; left:' + $.rnd(0,100) + '%;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
+         $(this).append('<span class="particle i' + $.rnd(1,11) + ' a' + $.rnd(1,8) + '" style="top:-10%; left:' + $.rnd(0,100) + '%;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
       }
    });
 }
