@@ -28,7 +28,7 @@ body {
             background-image: url('https://i.imgur.com/VYdvmBm.png');
          }
          &.i4 {
-            background-image: url('https://i.imgur.com/oWj43vS.png');
+            background-image: url('https://i.imgur.com/sXIWyqi.png');
          }
          &.i5 {
             background-image: url('https://i.imgur.com/7xci55C.png');
@@ -47,9 +47,6 @@ body {
          }
          &.i10 {
             background-image: url('https://i.imgur.com/VhmqYwt.png');
-         }
-         &.i11 {
-            background-image: url('https://i.imgur.com/sXIWyqi.png');
          }
          &.a1 {
             animation: waterfall1 5s ease-in infinite;
@@ -158,9 +155,9 @@ body {
 <script>
 function waterfall() {
    $.each($(".container"), function(){
-      var waterfallcount = ($(this).width()/30);
+      var waterfallcount = ($(this).width()/20);
       for(var i = 0; i <= waterfallcount; i++) {
-         $(this).append('<span class="particle i' + $.rnd(1,11) + ' a' + $.rnd(1,8) + '" style="top:-10%; left:' + $.rnd(0,100) + '%;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
+         $(this).append('<span class="particle i' + $.rnd(1,10) + ' a' + $.rnd(1,8) + '" style="top:-10%; left:' + $.rnd(0,100) + '%;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
       }
    });
 }
